@@ -2,22 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dynamic Mapbox + Weather</title>
+  <title>Interactive Weather Map 🌍</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Mapbox CSS -->
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
-
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <div id="info">Click anywhere on the map to see location + weather info</div>
-  <div id="map"></div>
+  <div class="app-container">
+    <div class="header">
+      <h1>🌍 Interactive Weather Map</h1>
+      <p>Click anywhere on the map to discover local weather conditions</p>
+    </div>
+    
+    <div class="map-container">
+      <div id="map"></div>
+      
+      <div id="infoPanel" class="info-panel">
+        <button class="close-btn" onclick="closeInfoPanel()">&times;</button>
+        <div id="infoPanelContent"></div>
+      </div>
+      
+      <div id="statusIndicator" class="status-indicator">
+        Ready to explore
+      </div>
+    </div>
+  </div>
 
-  <!-- Mapbox JS -->
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
-  <!-- Custom JS -->
   <script src="script.js"></script>
 </body>
 </html>
