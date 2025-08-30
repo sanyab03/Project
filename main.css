@@ -1,0 +1,30 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; 
+}
+
+#map {
+  position: absolute;
+  top: 40px; 
+  bottom: 0;
+  width: 100%;
+}
+
+#info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  background-color: #2F4D6B;
+  padding: 12px;
+  font-size: 19px;
+  font-weight: 500;
+  text-align: center;
+  z-index: 999;
+  box-sizing: border-box;
+  backdrop-filter: blur(6px); 
+}
